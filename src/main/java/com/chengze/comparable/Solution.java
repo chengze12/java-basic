@@ -2,6 +2,8 @@ package com.chengze.comparable;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 
 
@@ -25,14 +27,18 @@ public class Solution {
 
     public  static void main(String[] args){
         Employee[] empArr = new Employee[4];
-        empArr[0] = new Employee(10, "chengze", 25, 130000);
-        empArr[1] = new Employee(20, "jinyao", 24, 120000);
-        empArr[2] = new Employee(30, "laogu", 24, 110000);
-        empArr[3] = new Employee(40, "laoxu", 24, 120000);
+        empArr[0] = new Employee(20, "chengze", 25, 130000);
+        empArr[1] = new Employee(10, "jinyao", 24, 120000);
+        empArr[2] = new Employee(40, "laogu", 24, 110000);
+        empArr[3] = new Employee(30, "laoxu", 24, 120000);
 
         Arrays.sort(empArr);
         System.out.println("Default Sorting: \n" + Arrays.toString(empArr));
+
+
+        Arrays.sort( empArr ,new AgeComparator());
     }
 
 
 }
+
