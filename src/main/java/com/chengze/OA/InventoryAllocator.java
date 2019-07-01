@@ -10,6 +10,13 @@ public class InventoryAllocator {
     private List<HashMap<String, Integer>> res= new ArrayList<>();
     private List<String> fruits= new ArrayList<>();
 
+    /**
+     *
+     * @param input  How many and which kind of fruits I need
+     * @param inventory  How many fruits do I have in each inventory hold
+     * @return
+     */
+
     public List<HashMap<String,Integer>> InventoryAllocator(Map<String, Integer> input,List<HashMap<String,Integer>> inventory){
 
         //storage the friut name I need
@@ -26,6 +33,15 @@ public class InventoryAllocator {
         System.out.println(res);
         return res;
     }
+
+    /**
+     *
+     * @param res  The res I will submit
+     * @param input  How many and which kind of fruits I need
+     * @param inventory How many fruits do I have in each inventory hold
+     * @param fruitIndex Which fruit to choose now
+
+     */
 
     public void recursiveAllocator(List<HashMap<String, Integer>> res, Map<String, Integer> input, List<HashMap<String,Integer>> inventory,int fruitIndex){
         //exit condition
