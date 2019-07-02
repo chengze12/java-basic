@@ -10,9 +10,9 @@ public class yanghui {
             return res;
         }
         for(int i=0; i<=row; i++){
-            res.add(0,1);
-            for(int j=1;j< res.size()-1; j++){
-                res.set(j, res.get(j)+ res.get(j+1));
+            res.add(1);
+            for(int j=res.size()-2;j>=1; j--){
+                res.set(j, res.get(j)+ res.get(j-1));
             }
         }
         System.out.println(res);
