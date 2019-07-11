@@ -1,7 +1,6 @@
 package com.chengze.Algrithom;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class haven {
     private List<List<Integer>> getn(int target){
@@ -31,5 +30,9 @@ public class haven {
         haven solution = new haven();
         int a=22;
         solution.getn(a);
+
+        Queue<Integer> queue= new LinkedList<>();
+        
     }
 }
+
