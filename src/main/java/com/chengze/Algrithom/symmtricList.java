@@ -5,7 +5,7 @@ import com.chengze.Algrithom.support.ListNode;
 import java.util.LinkedList;
 import java.util.List;
 
-public class duichenlist {
+public class symmtricList {
 
         public boolean isPalindrome(ListNode head) {
             if(head==null){
@@ -34,7 +34,7 @@ public class duichenlist {
         }
 
     public  static  void main (String arg[]) {
-        duichenlist solution = new duichenlist();
+        symmtricList solution = new symmtricList();
 
         List<Integer> numbers= new LinkedList<>();
         numbers.add(1);
