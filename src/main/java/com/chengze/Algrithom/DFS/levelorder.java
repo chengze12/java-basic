@@ -17,7 +17,7 @@ public class levelorder {
     }
     private void helper(List<List<Integer>> res, TreeNode root, int level){
         if(root==null){
-            return;
+            res.get(level).add(root.val);
         }
         if(level==res.size()){
             res.add(new LinkedList<Integer>());
